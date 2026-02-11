@@ -1,0 +1,16 @@
+{
+  "name": "todox",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect ./be/index.js"
+  },
+  "dependencies": {
+    "lucide-react": "^0.556.0"
+  }
+}
