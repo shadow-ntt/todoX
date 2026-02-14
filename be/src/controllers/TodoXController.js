@@ -64,7 +64,7 @@ class TodoXController {
     }
   };
 
-  //[POST] /api/todox/:id/update
+  //[PATCH] /api/todox/:id/update
   update = async (req, res) => {
     const id = req.params.id;
     try {
@@ -75,7 +75,7 @@ class TodoXController {
     }
   };
 
-  //[POST] /api/todox/:id/delete
+  //[DELETE] /api/todox/:id/delete
   delete = async (req, res) => {
     const id = req.params.id;
     try {

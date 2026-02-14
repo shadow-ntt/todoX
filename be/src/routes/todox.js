@@ -7,7 +7,7 @@ router.get("/about", (req, res) => {
 });
 router.get("/", TodoXController.getAll);
 router.post("/add", TodoXController.add);
-router.post("/:id/update", TodoXController.update);
+router.patch("/:id/update", TodoXController.update);
 router.delete("/:id/delete", TodoXController.delete);
 
 module.exports = router;

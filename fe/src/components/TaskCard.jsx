@@ -26,7 +26,7 @@ export default function TaskCard({ task, handleChangeTask }) {
   }, [task]);
   const handleUpdateTitle = async () => {
     try {
-      await api.post(`/${task._id}/update`, {
+      await api.patch(`/${task._id}/update`, {
         title: valueTask,
       });
       handleChangeTask();
@@ -39,7 +39,7 @@ export default function TaskCard({ task, handleChangeTask }) {
   const handleUpdateStatus = async () => {
     try {
       setStatus(!status);
-      await api.post(`/${task._id}/update`, {
+      await api.patch(`/${task._id}/update`, {
         status: status ? "active" : "complete",
         completedAt: new Date(),
       });
